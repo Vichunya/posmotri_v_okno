@@ -36,3 +36,44 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.content__list {
+  height: 534px;  /* высота этой части по фигме*/
+  overflow: auto; /* значение auto или scroll ?*/
+  padding-top: 26px;
+}
+
+.content__details {
+  width: 399px;     /* ширина по фигме*/
+  height: 1200px;
+}
+
+.result {
+ padding-top: 78px;  /* этот контейнер лучше сверху сдвинуть марджином или паддингом */ 
+ margin-right: 30px;
+}
+
+h1 {
+  /*   
+  Хочу сделать шапку "Посмотри в окно" при прокрутке - фиксированную. Если делаю fixed, то получается "наезд" и 
+  отступ не работает. А если делаю sticky, то шапка "не фиксируется"
+  */
+  position: fixed; 
+  padding-bottom: 26px;
+}
+
+.result__video-container {
+  display: flex;
+  
+}
+
+.search-form {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+}
