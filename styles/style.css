@@ -115,9 +115,22 @@ ol {
 }
 
 .search-form__fieldset-title {     /*Город и время суток*/
-  font-family: Fira Sans Condensed;
   font-weight: lighter;
   font-size: 18px;
   line-height: 1,5;   /*прочла, что для обычного текста (1.5 интервал) часто используют*/           
 }
                   
+.content__card-link {  /*список карточек с видео*/
+ text-decoration: none;
+ color: white;
+}
+
+.content__video-card-title {    /*названия городов*/  
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: bold;                         
+}
+
+.content__video-card-description { /*в html - пустой контейнер, а в шаге 4 пункт 5 он есть. Может content__video-card-description-container*/
+
+}
