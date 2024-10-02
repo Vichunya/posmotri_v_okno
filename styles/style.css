@@ -134,3 +134,30 @@ ol {
 .content__video-card-description { /*в html - пустой контейнер, а в шаге 4 пункт 5 он есть. Может content__video-card-description-container*/
 
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  width: fit-content;
+}
+
+.result__video-container, button {
+  cursor: pointer;
+}
+
+.search-form__label {
+  appearance: none;  /*шаг 5 пункт 6 */
+                      /*как убрать белое выделение ? */
+}
