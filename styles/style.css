@@ -71,7 +71,14 @@ ol {
   отступ не работает. А если делаю sticky, то шапка "не фиксируется"
   */
   padding-bottom: 26px;
+  font-weight: bold;
+  font-size: 75px; 
+  line-height: 75%; 
+
 }
+.content__accent {
+  color: grey;
+  }
 
 .result__video-container {
   display: flex;
@@ -100,10 +107,17 @@ ol {
 }
 
 .content__video-card-description-container {
-
+ 
 }
 
 .content__list-item:not(:last-child) {
   margin-bottom: 2px;         /* отступ между ними 2px по фигме ? */
+}
+
+.search-form__fieldset-title {     /*Город и время суток*/
+  font-family: Fira Sans Condensed;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 1,5;   /*прочла, что для обычного текста (1.5 интервал) часто используют*/           
 }
                   
