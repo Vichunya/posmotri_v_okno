@@ -49,7 +49,7 @@ ol {
 }
 
 .content__list {
-  height: 534px;  /* высота этой части по фигме*/
+  height: 298px;  /* 534 (весь контейнер) высота этой части по фигме*/
   width: 100%;
   overflow: auto; /* значение auto (когда необходимо) = scroll (всегда) ?*/
   padding-top: 26px;
