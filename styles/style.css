@@ -73,7 +73,9 @@ ol {
   padding-bottom: 26px;
   font-weight: bold;
   font-size: 75px; 
-  line-height: 75%; 
+  line-height: 100%; 
+  text-transform: uppercase;
+  font-family: Oswald;
 
 }
 .content__accent {
@@ -111,7 +113,7 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 2px;         /* отступ между ними 2px по фигме ? */
+  padding-bottom: 30px;         
 }
 
 .search-form__fieldset-title {     /*Город и время суток*/
@@ -128,11 +130,13 @@ ol {
 .content__video-card-title {    /*названия городов*/  
   font-family: Oswald, sans-serif;
   font-size: 30px;
-  font-weight: bold;                         
+  font-weight: bold;
+  text-transform: uppercase;                         
 }
 
 .content__video-card-description { /*в html - пустой контейнер, а в шаге 4 пункт 5 он есть. Может content__video-card-description-container*/
-
+font-size: 18px;
+line-height: 16.2px;
 }
 
 .visually-hidden {
@@ -153,11 +157,32 @@ ol {
   width: fit-content;
 }
 
-.result__video-container, button {
+.result__video-container {
   cursor: pointer;
 }
 
-.search-form__label {
-  appearance: none;  /*шаг 5 пункт 6 */
-                      /*как убрать белое выделение ? */
+.search-form__textfield {
+  appearance: none;  /*шаг 5 пункт 6 */ /*как убрать белое выделение ? */
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  line-height: auto;  
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;                  
+}
+
+.search-form__pseudo-checkbox {
+
+}
+
+.button {
+  cursor: pointer;
+  appearance: none;  
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  line-height: auto;  
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
 }
