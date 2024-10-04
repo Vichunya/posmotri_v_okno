@@ -187,6 +187,16 @@ line-height: 16.2px;
   column-gap: 5px;
 }
 
+.search-form__label:has(input:checked) .search-form__pseudo-checkbox::after {  /*after для сосущет-я, а не подмены*/
+  display: flex;
+  column-gap: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  content: "";
+  margin: 1px;
+}
+
 .result__video-container {
   cursor: pointer;
 }
