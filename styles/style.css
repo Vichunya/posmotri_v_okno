@@ -51,15 +51,12 @@ ol {
 .content__list {
   height: 298px;  /* 534 (весь контейнер) высота этой части по фигме*/
   width: 100%;
-  overflow: auto; /* значение auto (когда необходимо) = scroll (всегда) ?*/
+  overflow: auto;
   overflow-x: hidden;
   padding-top: 26px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: /*пробовала разные значения, не меняется */
-  align-items:   /*пробовала разные значения, не меняется */
-  align-self: space-between; /*пробовала разные значения, не меняется */
 }
 
 .content__details {
@@ -72,10 +69,6 @@ ol {
 }
 
 .title {
-  /*   
-  Хочу сделать шапку "Посмотри в окно" при прокрутке - фиксированную. Если делаю fixed, то получается "наезд" и 
-  отступ не работает. А если делаю sticky, то шапка "не фиксируется"
-  */
   padding-bottom: 26px;
   font-weight: bold;
   font-size: 75px; 
@@ -128,7 +121,7 @@ ol {
 .search-form__fieldset-title {     /*Город и время суток*/
   font-weight: lighter;
   font-size: 18px;
-  line-height: 1,5;   /*прочла, что для обычного текста (1.5 интервал) часто используют*/           
+  line-height: 1,5;          
 }
                   
 .content__card-link {  /*список карточек с видео*/
@@ -185,11 +178,16 @@ line-height: 16.2px;
 .search-form__label {
   width: fit-content;
   display: flex;
-  column-gap: 5px;
+  column-gap: 5px; 
+  align-items: end;
 }
 
 .search-form__label:hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__label-text:hover {
   text-decoration: underline;
 }
 
@@ -213,7 +211,7 @@ line-height: 16.2px;
 }
 
 .search-form__textfield {
-  appearance: none;  /*шаг 5 пункт 6 */ /*как убрать белое выделение ? */
+  appearance: none; 
   font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   line-height: auto;  
@@ -225,6 +223,7 @@ line-height: 16.2px;
 
 .search-form__checkbox-list {
  display: flex;
+ column-gap: 15px;  
 }
 
 .search-form__pseudo-checkbox {
