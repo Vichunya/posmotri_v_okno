@@ -55,6 +55,11 @@ ol {
   overflow-x: hidden;
   padding-top: 26px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: /*пробовала разные значения, не меняется */
+  align-items:   /*пробовала разные значения, не меняется */
+  align-self: space-between; /*пробовала разные значения, не меняется */
 }
 
 .content__details {
@@ -109,6 +114,9 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  display: flex;
+  justify-content: 
+  align-items:   /*выровнять видео ?*/
 }
 
 .content__video-card-description-container {
@@ -116,7 +124,8 @@ ol {
 }
 
 .content__list-item:not(:last-child) {
-  padding-bottom: 30px;         
+  padding-bottom: 30px;   
+  display:
 }
 
 .search-form__fieldset-title {     /*Город и время суток*/
@@ -128,6 +137,25 @@ ol {
 .content__card-link {  /*список карточек с видео*/
  text-decoration: none;
  color: white;
+ display: block;
+ margin: 2px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:active {
+  background-color: gray;
+  text-decoration: none;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  border: 2px solid #808080;
 }
 
 .content__video-card-title {    /*названия городов*/  
@@ -195,13 +223,43 @@ line-height: 16.2px;
   height: 34px;
 }
 
+.search-form__submit-button:hover {
+  text-decoration: underline; 
+  } 
+
+.search-form__submit-button:focus {
+  outline: 1px solid #00f;
+}
+
+.search-form__submit-button:active {
+  border-color: transparent;
+  background-color: grey;  /*уточнить цвет и граница не пропадает*/
+  text-decoration: none;
+}
+
 .more-button {
   width: 399px;
   height: 34px;
 }
 
+.more-button:hover {
+  text-decoration: underline; 
+}
+
+.more-button:focus {
+  outline: 1px solid #00f;
+}
+
+.more-button:active {
+  border-color: transparent;
+  background-color: grey;  /*уточнить цвет и граница не пропадает*/
+  text-decoration: none;  
+}
+
 .search-form__textfield {
   outline: none;
+  width: 225px;
+  heigth: 27px;
 }
 
 .search-form__textfield:active {
@@ -211,4 +269,9 @@ border-color: transparent;
 
 .search-form__textfield:focus {
   outline: 1px solid #00f;
+}
+
+.search-form__checkbox-list {   /* делаю по фигме 212 на 42 и он поднимается вверх*/
+ /* width: 212px;
+  height: 42px;*/
 }
