@@ -143,12 +143,13 @@ ol {
 }
 
 .content__card-link:active {
-  background-color: gray;
+  background-color: #545050;
   text-decoration: none;
 }
 
 .content__card-link:focus {
-  outline: none;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__card-link:focus-visible {
@@ -185,6 +186,16 @@ line-height: 16.2px;
   width: fit-content;
   display: flex;
   column-gap: 5px;
+}
+
+.search-form__label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__label:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .search-form__label:has(input:checked) .search-form__pseudo-checkbox::after {  /*after для сосущет-я, а не подмены*/
@@ -245,12 +256,13 @@ line-height: 16.2px;
   } 
 
 .search-form__submit-button:focus {
-  outline: 1px solid #00f;
+  outline: 1px solid #fff;
+  outline-offset: 2px;  /*делает расстояние между outline и самим элементом*/
 }
 
 .search-form__submit-button:active {
   border-color: transparent;
-  background-color: grey;  /*уточнить цвет и граница не пропадает*/
+  background-color: #545050;
   text-decoration: none;
 }
 
@@ -291,4 +303,8 @@ border-color: transparent;
 .search-form__checkbox-list {   /* делаю по фигме 212 на 42 и он поднимается вверх*/
  /* width: 212px;
   height: 42px;*/
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
