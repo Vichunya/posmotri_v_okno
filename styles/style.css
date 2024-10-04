@@ -187,10 +187,6 @@ line-height: 16.2px;
   text-decoration: underline;
 }
 
-.search-form__label-text:hover {
-  text-decoration: underline;
-}
-
 .search-form__label:focus {
   outline: 1px solid #fff;
   outline-offset: 2px;
