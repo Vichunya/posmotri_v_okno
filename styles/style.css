@@ -276,19 +276,20 @@ line-height: 16.2px;
 }
 
 .more-button:focus {
-  outline: 1px solid #00f;
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .more-button:active {
   border-color: transparent;
-  background-color: grey;  /*уточнить цвет и граница не пропадает*/
+  background-color: #545050;
   text-decoration: none;  
 }
 
 .search-form__textfield {
   outline: none;
   width: 225px;
-  heigth: 27px;
+  height: 27px;
 }
 
 .search-form__textfield:active {
@@ -297,12 +298,8 @@ border-color: transparent;
 }
 
 .search-form__textfield:focus {
-  outline: 1px solid #00f;
-}
-
-.search-form__checkbox-list {   /* делаю по фигме 212 на 42 и он поднимается вверх*/
- /* width: 212px;
-  height: 42px;*/
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__card-link_current {
