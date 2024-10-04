@@ -109,14 +109,12 @@ ol {
 .content__video-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  display: flex;
-  justify-content: 
-  align-items:   /*выровнять видео ?*/
 }
 
 .content__video-card-description-container {
@@ -125,7 +123,6 @@ ol {
 
 .content__list-item:not(:last-child) {
   padding-bottom: 30px;   
-  display:
 }
 
 .search-form__fieldset-title {     /*Город и время суток*/
@@ -186,6 +183,8 @@ line-height: 16.2px;
 
 .search-form__label {
   width: fit-content;
+  display: flex;
+  column-gap: 5px;
 }
 
 .result__video-container {
@@ -203,8 +202,16 @@ line-height: 16.2px;
   border-bottom: 1px solid #fff;                  
 }
 
-.search-form__pseudo-checkbox {
+.search-form__checkbox-list {
+ display: flex;
+}
 
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  display:inline-block;
+  margin-top: 5px;
 }
 
 .button {
