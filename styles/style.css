@@ -89,7 +89,7 @@ ol {
 
 .search-form {
   display: flex;
-  margin-top: 11px;
+  margin-top: 21px;
   justify-content: space-between;
   height: 54px; /*захардкорд 54*/
   align-items: end;
