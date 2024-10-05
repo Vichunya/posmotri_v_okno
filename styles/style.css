@@ -64,7 +64,7 @@ ol {
 
 .title {
   padding-bottom: 26px;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 75px;
   line-height: 70.5px;
   text-transform: uppercase;
@@ -190,7 +190,7 @@ ol {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
-  }
+}
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
@@ -241,10 +241,26 @@ ol {
   appearance: none;
   font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
-  line-height: auto;
+  line-height: 21.6px;
   background-color: transparent;
   border: 1px solid #fff;
   color: white;
+  font-weight: 700;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  border-color: transparent;
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px; /*делает расстояние между outline и самим элементом*/
 }
 
 .search-form__submit-button {
@@ -252,47 +268,9 @@ ol {
   height: 34px;
 }
 
-.search-form__submit-button:hover {
-  text-decoration: underline;
-}
-
-.search-form__submit-button:focus {
-  outline: none;
-}
-
-.search-form__submit-button:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px; /*делает расстояние между outline и самим элементом*/
-}
-
-.search-form__submit-button:active {
-  border-color: transparent;
-  background-color: #545050;
-  text-decoration: none;
-}
-
 .more-button {
   width: 399px;
   height: 34px;
-}
-
-.more-button:hover {
-  text-decoration: underline;
-}
-
-.more-button:focus {
-  outline: none;
-}
-
-.more-button:focus:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
-}
-
-.more-button:active {
-  border-color: transparent;
-  background-color: #545050;
-  text-decoration: none;
 }
 
 .search-form__textfield {
