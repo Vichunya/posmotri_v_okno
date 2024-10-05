@@ -254,14 +254,17 @@ ol {
 }
 
 .button:active {
-  border-color: transparent;
   background-color: #545050;
   text-decoration: none;
 }
 
 .button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px; /*делает расстояние между outline и самим элементом*/
+  outline-offset: 2px;
 }
 
 .search-form__submit-button {
