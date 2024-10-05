@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -49,54 +49,47 @@ ol {
 }
 
 .content__list {
-  height: 298px;  /* 534 (весь контейнер) высота этой части по фигме*/
+  height: 298px; /* 534 (весь контейнер) высота этой части по фигме*/
   width: 100%;
   overflow: auto;
-  overflow-x: hidden;
-  padding-top: 26px;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .content__details {
-  width: 100%;    
+  width: 100%;
   height: 100%;
-}
-
-.result {
-
 }
 
 .title {
   padding-bottom: 26px;
-  font-weight: bold;
-  font-size: 75px; 
-  line-height: 100%; 
+  font-weight: bold; 
+  font-size: 75px;
+  line-height: 70.5px;
   text-transform: uppercase;
-  font-family: Oswald;
-
+  font-family: Oswald, sans-serif;
 }
 .content__accent {
-  color: grey;
-  }
+  color: #545050;
+}
 
 .result__video-container {
   display: flex;
   position: relative;
-  
 }
 
 .search-form {
   display: flex;
   margin-top: 21px;
   justify-content: space-between;
-  height: 54px; /*захардкорд 54*/
   align-items: end;
 }
 
 .result__video {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content__video-card {
@@ -108,23 +101,28 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .content__list-item:not(:last-child) {
-  padding-bottom: 30px;   
+  padding-bottom: 30px;
 }
 
-.search-form__fieldset-title {     /*Город и время суток*/
-  font-weight: lighter;
+.search-form__fieldset-title {
+  /*Город и время суток*/
+  font-weight: 400;
   font-size: 18px;
-  line-height: 1,5;          
+  line-height: 21.6px;
+  padding-bottom: 5px;
 }
-                  
-.content__card-link {  /*список карточек с видео*/
- text-decoration: none;
- color: white;
- display: block;
- margin: 2px;
+
+.content__card-link {
+  /*список карточек с видео*/
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin: 2px;
 }
 
 .content__card-link:hover {
@@ -145,16 +143,18 @@ ol {
   border: 2px solid #808080;
 }
 
-.content__video-card-title {    /*названия городов*/  
+.content__video-card-title {
+  /*названия городов*/
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: bold;
-  text-transform: uppercase;                         
+  text-transform: uppercase;
 }
 
-.content__video-card-description { /*в html - пустой контейнер, а в шаге 4 пункт 5 он есть. Может content__video-card-description-container*/
-font-size: 18px;
-line-height: 16.2px;
+.content__video-card-description {
+  /*в html - пустой контейнер, а в шаге 4 пункт 5 он есть. Может content__video-card-description-container*/
+  font-size: 18px;
+  line-height: 16.2px;
 }
 
 .visually-hidden {
@@ -174,7 +174,7 @@ line-height: 16.2px;
 .search-form__label {
   width: fit-content;
   display: flex;
-  column-gap: 5px; 
+  column-gap: 5px;
   align-items: end;
 }
 
@@ -188,7 +188,8 @@ line-height: 16.2px;
   outline-offset: 2px;
 }
 
-.search-form__label:has(input:checked) .search-form__pseudo-checkbox::after {  /*after для сосущет-я, а не подмены*/
+.search-form__label:has(input:checked) .search-form__pseudo-checkbox::after {
+  /*after для сосущет-я, а не подмены*/
   display: flex;
   column-gap: 5px;
   width: 15px;
@@ -203,35 +204,35 @@ line-height: 16.2px;
 }
 
 .search-form__textfield {
-  appearance: none; 
+  appearance: none;
   font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
-  line-height: auto;  
+  line-height: auto;
   background-color: transparent;
   border: none;
   border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;                  
+  border-bottom: 1px solid #fff;
 }
 
 .search-form__checkbox-list {
- display: flex;
- column-gap: 15px;  
+  display: flex;
+  column-gap: 15px;
 }
 
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  display:inline-block;
+  display: inline-block;
   margin-top: 5px;
 }
 
 .button {
   cursor: pointer;
-  appearance: none;  
+  appearance: none;
   font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
-  line-height: auto;  
+  line-height: auto;
   background-color: transparent;
   border: 1px solid #fff;
   color: white;
@@ -243,12 +244,12 @@ line-height: 16.2px;
 }
 
 .search-form__submit-button:hover {
-  text-decoration: underline; 
-  } 
+  text-decoration: underline;
+}
 
 .search-form__submit-button:focus {
   outline: 1px solid #fff;
-  outline-offset: 2px;  /*делает расстояние между outline и самим элементом*/
+  outline-offset: 2px; /*делает расстояние между outline и самим элементом*/
 }
 
 .search-form__submit-button:active {
@@ -263,7 +264,7 @@ line-height: 16.2px;
 }
 
 .more-button:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .more-button:focus {
@@ -274,7 +275,7 @@ line-height: 16.2px;
 .more-button:active {
   border-color: transparent;
   background-color: #545050;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .search-form__textfield {
@@ -284,8 +285,8 @@ line-height: 16.2px;
 }
 
 .search-form__textfield:active {
-outline: 1px solid #fff;
-border-color: transparent;
+  outline: 1px solid #fff;
+  border-color: transparent;
 }
 
 .search-form__textfield:focus {
