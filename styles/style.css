@@ -135,12 +135,11 @@ ol {
 }
 
 .content__card-link:focus {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline: none;
 }
 
 .content__card-link:focus-visible {
-  border: 2px solid #808080;
+  outline: 1px solid #fff;
 }
 
 .content__video-card-title {
@@ -149,6 +148,13 @@ ol {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content__video-card-description-container {
+  max-width: 200px;
 }
 
 .content__video-card-description {
@@ -175,7 +181,7 @@ ol {
   width: fit-content;
   display: flex;
   column-gap: 5px;
-  align-items: end;
+  align-items: center;
 }
 
 .search-form__label:hover {
@@ -224,7 +230,6 @@ ol {
   height: 19px;
   border: 1px solid #fff;
   display: inline-block;
-  margin-top: 5px;
 }
 
 .button {
